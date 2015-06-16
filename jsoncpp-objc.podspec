@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
  
 
   s.name         = "jsoncpp-objc"
-  s.version      = "1.0.2"
+  s.version      = "1.0.0"
   s.summary      = "自定义的横向滑动tableview"
  
   s.homepage     = "https://github.com/junhaiyang/jsoncpp-objc"

@@ -19,19 +19,19 @@ Pod::Spec.new do |s|
   
   s.exclude_files = "jsoncpp/devtools","jsoncpp/doc","jsoncpp/makefiles","jsoncpp/pkg-config","jsoncpp/scons-tools","jsoncpp/test","jsoncpp/src/jsontestrunner","jsoncpp/src/test_lib_json"
   
-  s.subspec 'json' do |ds|
-    
-    ds.source_files = 'jsoncpp/include/json/*.{h,m,mm}'  
-  
-    		 
+  s.subspec 'include' do |as|
+    as.subspec 'json' do |ds| 
+    	ds.source_files = 'jsoncpp/include/json/*.{h,m,mm}'   
+  	end   		 
   end
-  s.subspec 'src' do |ds|
-    ds.header_mappings_dir = 'jsoncpp/include'
-    
+  
+  s.subspec 'src' do |ds|  
+    ds.dependency 'jsoncpp-objc/include'
   	ds.source_files = 'jsoncpp/src/lib_json/*.{h,cpp,inl}'  
    	 
   end
    
+ s.header_mappings_dir = 'jsoncpp/include'
      
   
 end

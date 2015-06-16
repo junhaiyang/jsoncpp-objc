@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.author             = { "yangjunhai" => "junhaiyang@gmail.com" } 
   s.ios.deployment_target = "6.0" 
   
-  s.source = { :git => 'https://github.com/junhaiyang/jsoncpp-objc.git', :tag => '1.0.0' } 
+  s.source = { :git => 'https://github.com/junhaiyang/jsoncpp-objc.git', :tag => '1.0.0' , :submodules => true} 
  
   s.requires_arc = true
   

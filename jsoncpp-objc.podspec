@@ -26,12 +26,12 @@ Pod::Spec.new do |s|
     		 
   end
   s.subspec 'src' do |ds|
+    ds.header_mappings_dir = 'jsoncpp/include'
     
   	ds.source_files = 'jsoncpp/src/lib_json/*.{h,cpp,inl}'  
    	 
   end
    
      
-  s.header_mappings_dir = 'jsoncpp/include'
   
 end

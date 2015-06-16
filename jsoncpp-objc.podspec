@@ -21,17 +21,16 @@ Pod::Spec.new do |s|
   
   s.subspec 'json' do |ds|
     
-    ds.source_files = 'jsoncpp/include/**.{h,m,mm}'  
+    ds.source_files = 'jsoncpp/include/json/*.{h,m,mm}'  
   
     		 
   end
   s.subspec 'src' do |ds|
     
-  	ds.source_files = 'jsoncpp/src/**.{h,cpp,inl}'  
+  	ds.source_files = 'jsoncpp/src/lib_json/*.{h,cpp,inl}'  
    	 
   end
-  
-  s.source_files = 'jsoncpp/src/**.{h,cpp,inl}' 
+   
      
   s.header_mappings_dir = 'jsoncpp/include'
   
